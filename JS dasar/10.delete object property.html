@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menghapus Properti dari Objek</title>
+</head>
+<body>
+
+<script>
+  let tubuh = {
+    bugar: true,
+    sehat: true,
+    roda: 2
+  };
+
+
+  delete tubuh.roda;
+
+ 
+  console.log("Properti 'roda' telah dihapus. Objek tubuh sekarang:");
+  for (let prop in tubuh) {
+    console.log(prop + ": " + tubuh[prop]);
+  }
+</script>
+
+</body>
+</html>
